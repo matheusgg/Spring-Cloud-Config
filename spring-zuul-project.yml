@@ -1,14 +1,11 @@
 server:
-  port: ${vcap.application.port:9900}
+  port: 9900
 
 zuul:
-  proxy:
-    mapping: /api
-    addProxyHeaders: true    
-    route:
-      spring-simple-service: /spring-simple
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+  retryable: true
+  ignored-services: spring-eureka-service, spring-zuul-project
+  prefix: /gateway
+  routes:
+    simple:
+      service-id: spring-simple-service
+      path: /pub/simple
