@@ -8,4 +8,4 @@ zuul:
   routes:
     simple:
       service-id: spring-simple-service
-      path: /pub/simple
+      path: /pub/simple/**
