@@ -3,9 +3,4 @@ server:
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 3
-    lease-expiration-duration-in-seconds: 30
+    register-with-eureka: false
