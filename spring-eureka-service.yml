@@ -3,8 +3,9 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
-  server:
-    renewal-threshold-update-interval-ms: 1000
-    registry-sync-retry-wait-ms: 1000
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 30
