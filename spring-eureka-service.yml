@@ -11,3 +11,5 @@ spring:
     port: 32777
     username: guest
     password: guest
+    
+config.teste: Teste
