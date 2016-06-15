@@ -9,10 +9,3 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 3
     lease-expiration-duration-in-seconds: 30
-
-spring:
-  rabbitmq:
-    host: 192.168.99.100
-    port: 32777
-    username: guest
-    password: guest
