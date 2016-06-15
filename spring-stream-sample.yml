@@ -1,6 +1,6 @@
 channels-properties:
   consumer:
-    initial-concurrent: 2
+    initial-concurrent: 5
     max-concurrent: 10
   retry:
     max-attemps: 3
