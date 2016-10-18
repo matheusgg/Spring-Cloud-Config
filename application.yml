@@ -6,6 +6,6 @@ eureka:
       fetch-registry: true
       registry-fetch-interval-seconds: 3
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
     lease-renewal-interval-in-seconds: 3
     lease-expiration-duration-in-seconds: 30
