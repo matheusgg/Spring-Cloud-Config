@@ -1,0 +1,44 @@
+spring:
+  jackson.serialization.WRITE_DATES_AS_TIMESTAMPS: false
+  cloud:
+    stream:
+      default-binder: rabbit-cloud-bus
+      bindings:
+        requestChannel:
+          destination: ha.requestExchange
+          group: reqQueue
+          binder: rabbit-local
+          consumer:
+            concurrency: 3
+        responseChannel:
+          destination: ha.responseExchange
+          binder: rabbit-local
+        errorChannel:
+          destination: ha.DLX
+          binder: rabbit-local
+      binders:
+        rabbit-local:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+        rabbit-cloud-bus:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 32771
+                username: guest
+                password: guest
+
+retry-properties:
+  max-attemps: 5
+  initial-interval: 1000
+  multiplier: 2.0
+  max-interval: 60000
+
