@@ -1,4 +1,10 @@
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
   jackson.serialization.WRITE_DATES_AS_TIMESTAMPS: false
   cloud:
     stream:
