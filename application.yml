@@ -1,11 +1,11 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-      register-with-eureka: true
-      fetch-registry: true
-      registry-fetch-interval-seconds: 3
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 3
-    lease-expiration-duration-in-seconds: 30
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8761/eureka/
+#      register-with-eureka: true
+#      fetch-registry: true
+#      registry-fetch-interval-seconds: 3
+#  instance:
+#    prefer-ip-address: true
+#    lease-renewal-interval-in-seconds: 3
+#    lease-expiration-duration-in-seconds: 30
