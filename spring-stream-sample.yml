@@ -18,6 +18,7 @@ spring:
           binder: rabbit-local
       binders:
         rabbit-local:
+          defaultCandidate: false
           type: rabbit
           environment:
             spring:
@@ -28,6 +29,7 @@ spring:
                 password: 12345
                 virtual-host: stream
         rabbit-cloud-bus:
+          defaultCandidate: false
           type: rabbit
           environment:
             spring:
