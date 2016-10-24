@@ -24,17 +24,19 @@ spring:
               rabbitmq:
                 host: localhost
                 port: 5672
-                username: guest
-                password: guest
+                username: user2
+                password: 12345
+                virtual-host: stream
         rabbit-cloud-bus:
           type: rabbit
           environment:
             spring:
               rabbitmq:
                 host: localhost
-                port: 32771
-                username: guest
-                password: guest
+                port: 5672
+                username: user1
+                password: 12345
+                virtual-host: default
 
 retry-properties:
   max-attemps: 5
