@@ -19,6 +19,7 @@ spring:
       binders:
         rabbit-local:
           defaultCandidate: false
+          inheritEnvironment: false
           type: rabbit
           environment:
             spring:
@@ -30,6 +31,7 @@ spring:
                 virtual-host: stream
         rabbit-cloud-bus:
           defaultCandidate: false
+          inheritEnvironment: false
           type: rabbit
           environment:
             spring:
