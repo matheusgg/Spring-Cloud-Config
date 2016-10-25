@@ -19,7 +19,7 @@ spring:
       binders:
         rabbit-local:
           defaultCandidate: false
-          inheritEnvironment: false
+          inheritEnvironment: true
           type: rabbit
           environment:
             spring:
