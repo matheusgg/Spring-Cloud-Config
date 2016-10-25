@@ -19,8 +19,11 @@ spring:
       binders:
         rabbit-local:
           type: rabbit
+          inheritEnvironment: false
           environment:
             spring:
+              profiles:
+                active: cloud-stream
               rabbitmq:
                 host: localhost
                 port: 5672
@@ -29,8 +32,11 @@ spring:
                 virtual-host: stream
         rabbit-cloud-bus:
           type: rabbit
+          inheritEnvironment: false
           environment:
             spring:
+              profiles:
+                active: cloud-stream
               rabbitmq:
                 host: localhost
                 port: 5672
@@ -43,4 +49,3 @@ retry-properties:
   initial-interval: 1000
   multiplier: 2.0
   max-interval: 60000
-
