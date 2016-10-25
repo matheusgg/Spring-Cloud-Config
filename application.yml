@@ -1,10 +1,10 @@
-#spring:
-#  rabbitmq:
-#    host: localhost
-#    port: 5672
-#    username: user1
-#    password: 12345
-#    virtual-host: default
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user1
+    password: 12345
+    virtual-host: default
 
 #eureka:
 #  client:
