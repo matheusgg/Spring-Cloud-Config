@@ -18,8 +18,8 @@ spring:
           binder: rabbit-local
       binders:
         rabbit-local:
-          defaultCandidate: false
-          inheritEnvironment: true
+          defaultCandidate: true
+          inheritEnvironment: false
           type: rabbit
           environment:
             spring:
