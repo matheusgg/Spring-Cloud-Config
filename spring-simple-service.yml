@@ -1,2 +1,8 @@
 server:
   port: 9098
+
+spring:
+  cloud:
+    config:
+      override-none: true
+      override-system-properties: false
