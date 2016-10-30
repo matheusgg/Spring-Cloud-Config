@@ -1,6 +1,14 @@
 server:
   port: 9098
 
+# Por padrao, as configuracoes remotas (config server, por exemplo) sempre sobrescrevem as configuracoes locais,
+# seja de arquivos de configuracao (bootstrap.yml e application.yml), propriedades de sistema (-D), ou argumentos
+# de linha de comando (--). Para fazer com que as configuracoes remotas nao sobrescrevam as configuracoes locais é
+# preciso definir as propriedades override-none=true e override-system-properties=false no .yml remoto da aplicacao.
+# A propriedade override-none faz com que as configs dos arquivos locais tenham precedencia sobre as configs remotas.
+# Ja a propriedade override-system-properties faz com que as configs passadas via propriedades de sistema (-D) e argumentos
+# de linha de comando (--) tenham precedencia sobre as configs remotas.
+
 spring:
   cloud:
     config:
