@@ -1,0 +1,3 @@
+br.com.spring.consul.properties:
+  name: Test 1
+  specificProperty: Test 2
