@@ -1,6 +1,3 @@
-server:
-  port: 9098
-
 # Por padrao, as configuracoes remotas (config server, por exemplo) sempre sobrescrevem as configuracoes locais,
 # seja de arquivos de configuracao (bootstrap.yml e application.yml), propriedades de sistema (-D), ou argumentos
 # de linha de comando (--). Para fazer com que as configuracoes remotas nao sobrescrevam as configuracoes locais é
