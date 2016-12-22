@@ -1,13 +1,3 @@
-server:
-  port: 8761
-  
 eureka:
   client:
     register-with-eureka: false
-    
-#spring:
-#  rabbitmq:
-#    host: 192.168.99.100
-#    port: 32777
-#    username: guest
-#    password: guest
