@@ -1,4 +1,5 @@
 spring:
+  application.index: ${spring.application.name}:${HOST:${random.value}}
   cloud:
     config:
       override-system-properties: false
