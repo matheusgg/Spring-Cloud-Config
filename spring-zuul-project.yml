@@ -1,6 +1,3 @@
-server:
-  port: 9900
-
 zuul:
   retryable: true
   ignored-services: spring-eureka-service, spring-zuul-project
