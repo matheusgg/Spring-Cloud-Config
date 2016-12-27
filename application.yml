@@ -19,3 +19,6 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 30
+    
+logging:
+  config: http://${spring.cloud.consul.host}:${spring.cloud.consul.port}/v1/kv/${spring.cloud.consul.config.prefix}/logback.xml?raw
