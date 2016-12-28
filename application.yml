@@ -12,7 +12,7 @@ spring:
 eureka:
   client:
     healthcheck:
-      enabled: true
+      enabled: false
     register-with-eureka: true
     fetch-registry: true
     registry-fetch-interval-seconds: 5
