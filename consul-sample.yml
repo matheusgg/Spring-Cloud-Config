@@ -1,3 +1,6 @@
+logging:
+  config: http://${spring.cloud.consul.host}:${spring.cloud.consul.port}/v1/kv/${spring.cloud.consul.config.prefix}/logback.xml?raw
+  
 br.com.spring.consul.properties:
   name: Test 1
   specificProperty: Test 1
